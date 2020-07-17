@@ -1,0 +1,29 @@
+.order{
+
+}
+.order-info{
+    display: flex;
+    height: 10vh;
+    position: relative;
+}
+.order-food{
+    flex: 0 0 25%;
+}
+.order-foodImg{
+    width: 100%;
+    height: 80%;
+}
+.order-foodImg img{
+    width: 100%;
+    height: 100%;
+}
+.order-name{
+    text-align: center ;
+}
+.order-allPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
