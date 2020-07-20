@@ -1,0 +1,25 @@
+<script>
+    var partition = function(head, x) {
+    let a={val : null,next : null} , d
+    d = a
+    let b={val : null,next : null} , c
+    c = b
+    let pre = head
+    while(pre){
+        if(pre.val>=x){
+            d.next = pre
+            pre = pre.next
+            d = d.next
+        }else{
+            c.next = pre
+             pre = pre.next
+            c = c.next
+        }
+    }
+    d.next = null
+    c.next = null
+    c.next = a.next
+    return b.next
+};
+console.log(partition({val : 1 ,next :{val :2,next:{val:4,next:{val:3,next:null}}}},3))
+</script>
