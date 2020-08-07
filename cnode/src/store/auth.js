@@ -1,7 +1,7 @@
 import { observable ,action } from 'mobx'
 
 class Auth {
-    @observable isLogin = false  // 没有和页面绑定在一起
+    @observable isLogin = true    // 没有和页面绑定在一起
 
     @action
     login() {
